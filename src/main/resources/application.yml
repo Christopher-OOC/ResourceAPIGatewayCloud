@@ -5,9 +5,9 @@ spring:
     gateway:
       routes[0]:
         id: user-list
-        uri: localhost:9090/
+        uri: http://localhost:9090
         predicates[0]: Path=/users
         predicates[1]: Method=GET
-        filter: RemoveRequestHeader=Cookie
+        filter[0]: RemoveRequestHeader=Cookie
 
 
