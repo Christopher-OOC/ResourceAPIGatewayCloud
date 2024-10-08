@@ -1,0 +1,10 @@
+server:
+  port: 9010
+spring:
+  cloud:
+    gateway:
+      routes[0]:
+        id: user-list
+        uri: http://localhost:9090
+
+
