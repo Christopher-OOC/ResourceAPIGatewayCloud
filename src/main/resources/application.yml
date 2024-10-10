@@ -1,6 +1,8 @@
 server:
   port: 9091
 spring:
+  application:
+    name: CloudApiGateway
   cloud:
     gateway:
       routes[0]:
@@ -8,5 +10,9 @@ spring:
         uri: http://localhost:9090
         predicates[0]: Path=/users
         predicates[1]: Method=GET
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9092/eureka
 
 
