@@ -8,6 +8,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 public class ResourceApiGatewayCloudApplication {
 
+	// Eureka Client
+
 	public static void main(String[] args) {
 		SpringApplication.run(ResourceApiGatewayCloudApplication.class, args);
 	}
